@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "ng": "set NODE_OPTIONS=--openssl-legacy-provider && ng",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && node server.js",
+    "test": "ng test",
+    "e2e": "ng e2e",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
@@ -10,6 +14,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.19.2",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
